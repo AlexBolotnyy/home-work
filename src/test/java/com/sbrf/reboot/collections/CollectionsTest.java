@@ -2,6 +2,8 @@ package com.sbrf.reboot.collections;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -29,10 +31,12 @@ public class CollectionsTest {
     @Test
     public void addStudentToRating() {
 
-        List<String> students = null;
+        List<String> students = new ArrayList<>();
 
-        //...
-
+        students.add("Иванов");
+        students.add("Петров");
+        students.add("Сидоров");
+        students.add("Козлов");
         assertEquals(4, students.size());
     }
 
@@ -49,9 +53,18 @@ public class CollectionsTest {
     @Test
     public void addMoneyToBox() {
 
-        List<Integer> moneyBox = null;
+        List<Integer> moneyBox = new LinkedList<>();
 
-        //...
+        moneyBox.add(1);
+        moneyBox.add(2);
+        moneyBox.add(3);
+        moneyBox.add(4);
+        moneyBox.add(5);
+        moneyBox.add(6);
+        moneyBox.add(7);
+        moneyBox.add(8);
+        moneyBox.add(9);
+        moneyBox.add(10);
 
         assertEquals(10, moneyBox.size());
     }
@@ -71,9 +84,11 @@ public class CollectionsTest {
         class Book {
         }
 
-        List<Book> bookshelf = null;
+        List<Book> bookshelf = new LinkedList<>();
 
-        //...
+        bookshelf.add(new Book());
+        bookshelf.add(new Book());
+        bookshelf.add(new Book());
 
         assertEquals(3, bookshelf.size());
     }
