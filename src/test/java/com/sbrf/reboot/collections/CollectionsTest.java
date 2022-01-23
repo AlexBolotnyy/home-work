@@ -31,7 +31,7 @@ public class CollectionsTest {
     @Test
     public void addStudentToRating() {
 
-        List<String> students = new ArrayList<>();
+        List<String> students = new LinkedList<>();
 
         students.add("Иванов");
         students.add("Петров");
